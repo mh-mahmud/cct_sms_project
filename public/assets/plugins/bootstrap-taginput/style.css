@@ -1,0 +1,82 @@
+p{ line-height:1.4; }
+code{ padding:2px 3px; background:lightyellow; }
+pre code{ background:none; padding:0; }
+pre[class*=language-]{ max-height:400px; }
+.forkLink{ top:1em; right:1em; }
+
+section > .rightSide{
+	position: sticky;
+	top: 1em;
+	align-self: start;
+}
+
+.tagify{
+	min-width:400px;
+	max-width:600px;
+	margin: 1.5em 0;
+}
+
+/* for disabling the script */
+.disabled tags{
+	max-width:none;
+	min-width:0;
+	border:0;
+}
+
+.disabled tags tag,
+.disabled tags div{ display:none !important; }
+
+.disabled tags + input,
+.disabled tags + textarea{ display:initial; border:1px inset; }
+
+/* Outside of the box */
+.tagify--outside{
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.tagify__input--outside{
+	display: block;
+	max-width: 600px;
+	border: 1px solid #DDD;
+	margin-top: 1.5em;
+}
+
+/* Countries' flags */
+.tagify__dropdown.extra-properties .tagify__dropdown__item{ color:#777; }
+.tagify__dropdown.extra-properties .tagify__dropdown__item:hover{ color:black; background:#F1F1F1; }
+
+.tagify__dropdown.extra-properties .tagify__dropdown__item > img{
+	display: inline-block;
+	vertical-align: middle;
+	height: 20px;
+	transform: scale(.75);
+	margin-right: 5px;
+	border-radius: 2px;
+	transition: .12s ease-out;
+}
+
+.tagify__dropdown.extra-properties .tagify__dropdown__item--active > img,
+.tagify__dropdown.extra-properties .tagify__dropdown__item:hover > img{
+	transform: none;
+	margin-right: 12px;
+}
+
+.tagify.countries .tagify__input{ min-width:175px; }
+
+.tagify.countries tag{ white-space:nowrap; }
+.tagify.countries tag img{
+	display: inline-block;
+	height: 16px;
+	margin-right: 3px;
+	border-radius: 2px;
+}
+
+/* .tagify.readonlyMix > tag:not([readonly]) div::before{ background:#d3e2e2; } */
+
+.tagify__input .borderd-blue > div::before{ border:2px solid #8DAFFA; }
+
+.form-group.has-error tags {
+    border: 1px solid #c12222;
+}

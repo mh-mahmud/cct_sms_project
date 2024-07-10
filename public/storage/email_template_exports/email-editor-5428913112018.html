@@ -1,0 +1,160 @@
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    /*
+body {
+ margin: 0;
+ padding: 0;
+}
+
+body, table, td, p, a, li {
+ -webkit-text-size-adjust: 100%;
+ -ms-text-size-adjust: 100%;
+}
+
+a {
+ word-wrap: break-word;
+}
+
+table td {
+ border-collapse: collapse;
+}
+
+table {
+ border-spacing  : 0;
+ border-collapse  : collapse;
+ mso-table-lspace: 0pt;
+ mso-table-rspace: 0pt;
+}
+
+table, td {
+ mso-table-lspace: 0pt;
+ mso-table-rspace: 0pt;
+}
+
+.ReadMsgBody {
+ width:100%;
+ background-color: #eeeeee;
+}
+
+.ExternalClass {
+ width: 100%;
+ background-color: #eeeeee;
+}
+
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+ line-height: 100%;
+}
+
+.ExternalClass * {
+ line-height: 100%;
+}
+
+@media only screen and (max-width: 640px) {
+
+ table[class="main"],td[class="main"] { width:100% !important; min-width: 200px !important; }
+
+ table[class="logo-img"] { width:100% !important; float: none; margin-bottom: 15px;}
+ table[class="logo-img"] td { text-align: center !important;}
+
+ table[class="logo-title"] { width:100% !important; float: none;}
+ table[class="logo-title"] td { text-align: center; height: auto}
+ table[class="logo-title"] h1 { font-size: 24px !important; }
+ table[class="logo-title"] h2 { font-size: 18px !important; }
+
+ td[class="header-img"] img { width:100% !important; height:auto !important; }
+
+ td[class="title"] { padding-left: 25px !important; padding-right: 25px !important; }
+ td[class="title"] h1 { font-size: 24px !important; }
+
+ td.block-text { padding-left: 25px !important; padding-right: 25px !important; }
+ td[class="block-text"] h2 { font-size: 20px !important; line-height: 170% !important; }
+ td[class="block-text"] p { font-size: 16px !important; line-height: 170% !important; }
+ td[class="block-text"] li { font-size: 16px !important; line-height: 170% !important; }
+
+ td[class="two-columns"] { padding-left: 25px !important; padding-right: 25px !important; }
+ table[class="text-column"] { width:100% !important; float: none; margin-bottom: 15px;}
+
+ td[class="image-caption"] { padding-left: 25px !important; padding-right: 25px !important; }
+ table[class="image-caption-container"] { width:100% !important;}
+ table[class="image-caption-column"] { width:100% !important; float: none;}
+ td[class="image-caption-content"] img { width:100% !important; height:auto !important; }
+ td[class="image-caption-content"] h2 { font-size: 20px !important; line-height: 170% !important; }
+ td[class="image-caption-content"] p { font-size: 16px !important; line-height: 170% !important; }
+ td[class="image-caption-top-gap"] { height: 15px !important; }
+ td[class="image-caption-bottom-gap"] { height: 5px !important; }
+
+ td[class="text"] { width:100% !important; }
+ td[class="text"] p { font-size: 16px !important; line-height: 170% !important; }
+ td[class="text"] h2 { font-size: 20px !important; line-height: 170% !important; }
+ td[class="gap"] { display:none; }
+
+ td[class="header"] { padding: 25px 25px 25px 25px !important; }
+ td[class="header"] h1 { font-size: 24px !important; }
+ td[class="header"] h2 { font-size: 20px !important; }
+
+ td[class="footer"] { padding-left: 25px !important; padding-right: 25px !important; }
+ td[class="footer"] p { font-size: 13px !important; }
+ table[class="footer-side"] { width: 100% !important; float: none !important; }
+ td[class="footer-side"] { text-align: center !important; }
+ td[class="social-links"] { text-align: center !important; }
+ table[class="footer-social-icons"] { float: none !important; margin: 0px auto !important; }
+ td[class="social-icon-link"] { padding: 0px 5px !important; }
+
+ td[class="image"] img { width:100% !important; height:auto !important; }
+ td[class="image"] { padding-left: 25px !important; padding-right: 25px !important; }
+
+ td[class="image-full"] img { width:100% !important; height:auto !important; }
+ td[class="image-full"] { padding-left: 0px !important; padding-right: 0px !important; }
+
+ td[class="image-group"] img { width:100% !important; height:auto !important; margin: 15px 0px 15px 0px !important; }
+ td[class="image-group"] { padding-left: 25px !important; padding-right: 25px !important; }
+
+ table[class="image-in-table"] { width:100% !important; float: none; margin-bottom: 15px;}
+ table[class="image-in-table"] td { width:100% !important;}
+ table[class="image-in-table"] img { width:100% !important; height:auto !important; }
+
+
+ td[class="image-text"] { padding-left: 25px !important; padding-right: 25px !important; }
+ td[class="image-text"] p { font-size: 16px !important; line-height: 170% !important; }
+
+ td[class="divider-simple"] { padding-left: 25px !important; padding-right: 25px !important; }
+
+ td[class="divider-full"] { padding-left: 0px !important; padding-right: 0px !important; }
+
+ td[class="social"] { padding-left: 25px !important; padding-right: 25px !important; }
+
+ table[class="preheader"] { display:none; }
+ td[class="preheader-gap"] { display:none; }
+ td[class="preheader-link"] { display:none; }
+ td[class="preheader-text"] { width:100%; }
+
+ td[class="buttons"] { padding-left: 25px !important; padding-right: 25px !important; }
+
+ table[class="button"] { width:100% !important; float: none; }
+
+ td[class="content-buttons"] { padding-left: 25px !important; padding-right: 25px !important; }
+ td[class="buttons-full-width"] { padding-left: 0px !important; padding-right: 0px !important; }
+ td[class="buttons-full-width"] a { width:100% !important; padding-left: 0px !important; padding-right: 0px !important; }
+ td[class="buttons-full-width"] span { width:100% !important; padding-left: 0px !important; padding-right: 0px !important; }
+
+ table[class="content"] { width:100% !important; float: none !important;}
+ td[class="gallery-image"] { width:100% !important; padding: 0px !important;}
+
+ table[class="social"] { width: 100%!important; text-align: center!important; }
+ table[class="links"] { width: 100%!important; }
+ table[class="links"] td { text-align: center!important; }
+ table[class="footer-btn"] { text-align: center!important; width: 100%!important; margin-bottom: 10px; }
+ table[class="footer-btn-wrap"] { margin-bottom: 0px; width: 100%!important; }
+
+ td[class="head-social"]  { width: 100%!important; text-align: center!important; padding-top: 20px; }
+ td[class="head-logo"]  { width: 100%!important; text-align: center!important; }
+ tr[class="header-nav"] { display: none; }
+
+}*/
+</style>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:rgb(233, 234, 234);background:rgb(233, 234, 234) none repeat scroll 0% 0% / auto padding-box border-box;"><tbody><tr><td><div style="margin:0 auto;width:600px;padding:10px">
+                            <table class="main mce-item-table" width="600px" cellspacing="0" cellpadding="0" border="0" style="background-color: rgb(255, 255, 255); width: 600px; border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;" align="center">
+            </table><table width="100%" cellspacing="0" cellpadding="0" border="0" name="bmeMainBody" bgcolor="#eff5f9" class="mce-item-table" style="border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td width="100%" valign="top" align="center" style="border-collapse: collapse; text-size-adjust: 100%;"><table cellspacing="0" cellpadding="0" border="0" name="bmeMainColumnParentTable" class="mce-item-table" style="border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td name="bmeMainColumnParent" style="border-collapse: collapse; text-size-adjust: 100%;"><table name="bmeMainColumn" class="bmeHolder bmeMainColumn mce-item-table" cellspacing="0" cellpadding="0" border="0" align="center" style="max-width: 600px; overflow: visible; border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td width="100%" class="blk_container bmeHolder" name="bmePreHeader" valign="top" align="center" bgcolor="" style="color: rgb(102, 102, 102); border: 0px none transparent; border-collapse: collapse; text-size-adjust: 100%;"></td></tr><tr><td width="100%" class="bmeHolder" valign="top" align="center" name="bmeMainContentParent" style="border-color: rgb(128, 128, 128); border-radius: 5px; border-collapse: collapse; border-spacing: 0px; text-size-adjust: 100%;"><table name="bmeMainContent" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="border-collapse: collapse; border-radius: 5px; overflow: hidden; border-spacing: 0px; text-size-adjust: 100%;" class="mce-item-table"><tbody><tr><td width="100%" class="blk_container bmeHolder" name="bmeHeader" valign="top" align="center" bgcolor="#eff5f9" style="border: 0px none transparent; border-collapse: collapse; text-size-adjust: 100%;"><div id="dv_15" class="blk_wrapper"><table width="600" cellspacing="0" cellpadding="0" border="0" class="blk mce-item-table" name="blk_image" style="border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td style="border-collapse: collapse; text-size-adjust: 100%;"><table width="100%" cellspacing="0" cellpadding="0" border="0" class="mce-item-table" style="border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td align="center" class="bmeImage" style="border-collapse: collapse; text-size-adjust: 100%;"><img src="https://benchmarkemail.com/images/templates_n/new_editor/Templates/ChristmasCard/CardTop.png" class="mobile-img-large" width="600" alt="" border="0" style="max-width: 1200px; display: block; width: 600px;"></td></tr></tbody></table></td></tr></tbody></table></div><div id="dv_25" class="blk_wrapper"><table width="600" cellspacing="0" cellpadding="0" border="0" class="blk mce-item-table" name="blk_image" style="border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td style="border-collapse: collapse; text-size-adjust: 100%;"><table width="100%" cellspacing="0" cellpadding="0" border="0" class="mce-item-table" style="border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td align="center" class="bmeImage" style="border-collapse: collapse; text-size-adjust: 100%;"><img src="https://benchmarkemail.com/images/templates_n/new_editor/Templates/ChristmasCard/CardMiddle.jpg" class="mobile-img-large" width="600" alt="" border="0" style="max-width: 1200px; display: block; width: 600px;"></td></tr></tbody></table></td></tr></tbody></table></div><div id="dv_26" class="blk_wrapper"><table width="600" cellspacing="0" cellpadding="0" border="0" class="blk mce-item-table" name="blk_image" style="border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td style="border-collapse: collapse; text-size-adjust: 100%;"><table width="100%" cellspacing="0" cellpadding="0" border="0" class="mce-item-table" style="border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td align="center" class="bmeImage" style="border-collapse: collapse; text-size-adjust: 100%;"><img src="https://benchmarkemail.com/images/templates_n/new_editor/Templates/ChristmasCard/CardBottom.png" class="mobile-img-large" width="600" alt="" border="0" style="max-width: 1200px; display: block; width: 600px;"></td></tr></tbody></table></td></tr></tbody></table></div><div id="dv_2" class="blk_wrapper"><table width="600" cellspacing="0" cellpadding="0" border="0" class="blk mce-item-table" name="blk_divider" style="border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td class="tblCellMain" style="padding: 10px 20px; border-collapse: collapse; text-size-adjust: 100%;"><table class="tblLine mce-item-table" cellspacing="0" cellpadding="0" border="0" width="100%" style="border-top-width: 0px; border-top-style: none; min-width: 1px; border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td style="border-collapse: collapse; text-size-adjust: 100%;"></td></tr></tbody></table></td></tr></tbody></table></div></td></tr><tr><td width="100%" class="blk_container bmeHolder bmeBody" name="bmeBody" valign="top" align="center" bgcolor="#ffffff" style="color: rgb(56, 56, 56); border: 0px none transparent; border-collapse: collapse; text-size-adjust: 100%;"><div id="dv_11" class="blk_wrapper"><table width="600" cellspacing="0" cellpadding="0" border="0" class="blk mce-item-table" name="blk_divider" style="border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td class="tblCellMain" style="padding: 20px; border-collapse: collapse; text-size-adjust: 100%;"><table class="tblLine mce-item-table" cellspacing="0" cellpadding="0" border="0" width="100%" style="border-top-width: 0px; border-top-style: none; min-width: 1px; border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td style="border-collapse: collapse; text-size-adjust: 100%;"></td></tr></tbody></table></td></tr></tbody></table></div><div id="dv_10" class="blk_wrapper"><table width="600" cellspacing="0" cellpadding="0" border="0" class="blk mce-item-table" name="blk_text" style="border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td style="border-collapse: collapse; text-size-adjust: 100%;"><table cellpadding="0" cellspacing="0" border="0" width="100%" class="bmeContainerRow mce-item-table" style="border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td class="tdPart" valign="top" align="center" style="border-collapse: collapse; text-size-adjust: 100%;"><table cellspacing="0" cellpadding="0" border="0" width="600" name="tblText" align="left" class="tblText mce-item-table" style="float: left; border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td valign="top" align="left" name="tblCell" class="tblCell" style="padding: 10px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: rgb(56, 56, 56); border-collapse: collapse; text-size-adjust: 100%;"><div style="line-height: 17.5px; text-align: center;"><span style="font-size: 36px; font-family: Georgia, Palatino; color: rgb(187, 57, 47); line-height: 45px;"><em>SPECIAL OFFERS</em></span>&nbsp;<br><span style="font-size: 12px; color: rgb(203, 208, 212); line-height: 15px;">__________</span></div></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></div><div id="dv_12" class="blk_wrapper"><table width="600" cellspacing="0" cellpadding="0" border="0" class="blk mce-item-table" name="blk_text" style="border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td style="border-collapse: collapse; text-size-adjust: 100%;"><table cellpadding="0" cellspacing="0" border="0" width="100%" class="bmeContainerRow mce-item-table" style="border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td class="tdPart" valign="top" align="center" style="border-collapse: collapse; text-size-adjust: 100%;"><table cellspacing="0" cellpadding="0" border="0" width="600" name="tblText" align="left" class="tblText mce-item-table" style="float: left; border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td valign="top" align="left" name="tblCell" class="tblCell" style="padding: 5px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: rgb(56, 56, 56); border-collapse: collapse; text-size-adjust: 100%;"><div style="line-height: 28px; text-align: center;"><span style="font-family: Georgia, Palatino; color: rgb(102, 102, 102); line-height: 28px;"><em>With this section, you want to make your subscribers feeling the warm and fuzzy. After all, that's what holidays are about. Togetherness with family and friends, memories new and old. Tradition. You are totally stoked about the piece of information that goes here and your subscribers will be too.</em></span></div></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></div><div id="dv_14" class="blk_wrapper"><table width="600" cellspacing="0" cellpadding="0" border="0" class="blk mce-item-table" name="blk_divider" style="background-color: rgb(226, 226, 226); border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td class="tblCellMain" style="padding-bottom: 10px; border-collapse: collapse; text-size-adjust: 100%;"><table class="tblLine mce-item-table" cellspacing="0" cellpadding="0" border="0" width="100%" style="border-top: 40px solid rgb(255, 255, 255); min-width: 1px; border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td style="border-collapse: collapse; text-size-adjust: 100%;"></td></tr></tbody></table></td></tr></tbody></table></div><div id="dv_19" class="blk_wrapper"><table width="600" cellspacing="0" cellpadding="0" border="0" class="blk mce-item-table" name="blk_divider" style="background-color: rgb(239, 245, 249); border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td class="tblCellMain" style="padding: 10px 20px; border-collapse: collapse; text-size-adjust: 100%;"><table class="tblLine mce-item-table" cellspacing="0" cellpadding="0" border="0" width="100%" style="border-top-width: 0px; border-top-style: none; min-width: 1px; border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td style="border-collapse: collapse; text-size-adjust: 100%;"></td></tr></tbody></table></td></tr></tbody></table></div><div id="dv_18" class="blk_wrapper"><table width="600" cellspacing="0" cellpadding="0" border="0" class="blk mce-item-table" name="blk_divider" style="border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td class="tblCellMain" style="padding: 20px; border-collapse: collapse; text-size-adjust: 100%;"><table class="tblLine mce-item-table" cellspacing="0" cellpadding="0" border="0" width="100%" style="border-top-width: 0px; border-top-style: none; min-width: 1px; border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td style="border-collapse: collapse; text-size-adjust: 100%;"></td></tr></tbody></table></td></tr></tbody></table></div><div id="dv_17" class="blk_wrapper"><table width="600" cellspacing="0" cellpadding="0" border="0" class="blk mce-item-table" name="blk_text" style="border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td style="border-collapse: collapse; text-size-adjust: 100%;"><table cellpadding="0" cellspacing="0" border="0" width="100%" class="bmeContainerRow mce-item-table" style="border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td class="tdPart" valign="top" align="center" style="border-collapse: collapse; text-size-adjust: 100%;"><table cellspacing="0" cellpadding="0" border="0" width="600" name="tblText" align="left" class="tblText mce-item-table" style="float: left; border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td valign="top" align="left" name="tblCell" class="tblCell" style="padding: 10px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: rgb(56, 56, 56); border-collapse: collapse; text-size-adjust: 100%;"><div style="line-height: 17.5px; text-align: center;"><span style="font-size: 36px; font-family: Georgia, Palatino; color: rgb(187, 57, 47); line-height: 45px;"><em>30% Off The First 100 Orders!</em></span>&nbsp;<br><span style="font-size: 12px; color: rgb(203, 208, 212); line-height: 15px;">__________</span></div></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></div><div id="dv_16" class="blk_wrapper"><table width="600" cellspacing="0" cellpadding="0" border="0" class="blk mce-item-table" name="blk_text" style="border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td style="border-collapse: collapse; text-size-adjust: 100%;"><table cellpadding="0" cellspacing="0" border="0" width="100%" class="bmeContainerRow mce-item-table" style="border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td class="tdPart" valign="top" align="center" style="border-collapse: collapse; text-size-adjust: 100%;"><table cellspacing="0" cellpadding="0" border="0" width="600" name="tblText" align="left" class="tblText mce-item-table" style="float: left; border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td valign="top" align="left" name="tblCell" class="tblCell" style="padding: 5px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: rgb(56, 56, 56); border-collapse: collapse; text-size-adjust: 100%;"><div style="line-height: 28px; text-align: center;"><span style="font-family: Georgia, Palatino; color: rgb(102, 102, 102); line-height: 28px;"><em>You had to be excited enough about something to decide to send this email campaign. This is where that news goes. Think of it as your mountaintop to shout from.</em></span></div></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></div><div id="dv_21" class="blk_wrapper"><table width="600" cellspacing="0" cellpadding="0" border="0" class="blk mce-item-table" name="blk_text" style="border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td style="border-collapse: collapse; text-size-adjust: 100%;"><table cellpadding="0" cellspacing="0" border="0" width="100%" class="bmeContainerRow mce-item-table" style="border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td class="tdPart" valign="top" align="center" style="border-collapse: collapse; text-size-adjust: 100%;"><table cellspacing="0" cellpadding="0" border="0" width="600" name="tblText" align="left" class="tblText mce-item-table" style="float: left; border-spacing: 0px; border-collapse: collapse; text-size-adjust: 100%;"><tbody><tr><td valign="top" align="left" name="tblCell" class="tblCell" style="padding: 20px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: rgb(56, 56, 56); border-collapse: collapse; text-size-adjust: 100%;"><div style="line-height: 21px; text-align: center;"><span style="font-size: 18px; font-family: Georgia, Palatino; color: rgb(102, 102, 102); line-height: 27px;">Here's your personal code:&nbsp;</span></div></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></div></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></div></td></tr></table>

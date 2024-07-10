@@ -1,0 +1,140 @@
+<?php
+
+namespace App\Http\Controllers\Auth;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\Request;
+use Illuminate\Validation\ValidationException;
+use DB;
+use App\User;
+
+class LoginController extends Controller
+{
+    /*
+    |--------------------------------------------------------------------------
+    | Login Controller
+    |--------------------------------------------------------------------------
+    |
+    | This controller handles authenticating users for the application and
+    | redirecting them to your home screen. The controller uses a trait
+    | to conveniently provide its functionality to your applications.
+    |
+    */
+
+    use AuthenticatesUsers;
+
+    /**
+     * Where to redirect users after login.
+     *
+     * @var string
+     */
+    protected $redirectTo = '#/dashboard';
+
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('guest')->except('logout');
+    }
+    public function logout(){
+        Auth::logout();
+        return redirect('/login');
+    }
+     /**
+     * Check extension
+     * @return string
+     */
+    public function extension()
+    {
+        $extn  = request()->get('extn');
+        $fieldName = 'extn';
+        request()->merge([$fieldName => $extn]);
+
+        return $fieldName;
+    }
+
+    /**
+     * Validate the user login.
+     * @param Request $request
+     */
+    protected function validateLogin(Request $request)
+    { 
+        $this->validate(
+            $request,
+            [
+                'extn' => 'required|string',
+                'account_id' => 'required|string',
+                'password' => 'required|string',
+            ],
+            [
+                'extn.required' => 'Extension is required',
+                'account_id.required' => 'Account Id is required',
+                'password.required' => 'Password is required',
+            ]
+        );
+    }
+
+    /**
+     * @param Request $request
+     * @throws ValidationException
+     * this is working for laravel 5.6
+     */
+    // protected function sendFailedLoginResponse(Request $request)
+    // { 
+    //     throw ValidationException::withMessages(
+    //         [
+    //             'login_error' => [trans('auth.login_failed')],
+    //         ]
+    //     );
+    // }
+
+     /**
+     * @param Request $request
+     * @throws ValidationException
+     * this is working for laravel 5.4
+     */
+
+    protected function sendFailedLoginResponse(Request $request)
+    { 
+        return redirect()->back()
+            ->withInput($request->only('account_id', 'extn'))
+            ->withErrors(['login_error' => [trans('auth.login_failed')]]);
+    }
+
+    /**
+     * Attempt to log the user into the application.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return bool
+     */
+    protected function attemptLogin(Request $request)
+    { 
+        $pbxDbName = config('database.pbx_db_name');
+        $user = User::selectRaw("user.*, up.email, IF(up.timezone='', ap.timezone, up.timezone) as timezone, up.password")
+        ->leftJoin($pbxDbName.'.user_profile as up','user.userid','up.userid')
+        ->leftJoin($pbxDbName.'.account_profile as ap','user.account_id','ap.account_id')
+        ->where(['user.account_id' => $request->account_id,'user.extn' => $request->extn,'user.status' => 'A'])
+        ->first(); 
+        dd($user);
+        if ($user && $user->password == md5($user->userid.$request->password)) {
+            $this->guard()->login($user, $request->has('remember'));
+            return true;
+        }
+        return false;
+        
+    }
+    /**
+     * set user session data after login
+     */
+    protected function authenticated(Request $request, $user)
+    {
+        $request->session()->put('loginUser', $user->getOriginal());
+    }
+    
+
+}
